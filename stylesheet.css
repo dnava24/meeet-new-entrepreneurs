@@ -1,0 +1,170 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--backgroundColor: rgb(18, 49, 65);
+	--green: rgb(126, 251, 211);
+	--gray: rgb(175, 190, 199);
+	--headerfont: "Sen";
+	--bodyfont: "Inter";
+}
+body {
+	background-color: var(--backgroundColor);
+	font-family: var(--bodyfont);
+	color: var(--gray);
+	margin: 2rem 13rem;
+}
+
+h1 {
+	font-family: var(--headerfont);
+	font-size: 11vw;
+	font-weight: 600;
+	color: var(--green);
+	margin-top: 4rem;
+}
+p {
+	margin-right: 45%;
+	margin-top: 5%;
+	font-size: 1.5rem;
+}
+.btn {
+	background-color: var(--green);
+	border: none;
+	color: black;
+	font-family: "Inter";
+	font-weight: bold;
+	font-size: 1.5em;
+	padding: 1.3rem;
+	margin: 2rem 0 5rem 0;
+}
+.btn:hover {
+	color: var(--green);
+	border: 1px solid var(--green);
+}
+
+img {
+	display: inline-block;
+}
+.social {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+.social p {
+	margin: 0;
+}
+.one,
+.two,
+.three,
+.four,
+.five,
+.six {
+	position: absolute;
+}
+.one {
+	right: 4em;
+	top: 22em;
+	z-index: -1;
+}
+.two {
+	top: 1em;
+	right: 5em;
+}
+.three {
+	z-index: -1;
+	top: 7em;
+	left: 7em;
+}
+.four {
+	right: 8em;
+	bottom: 3em;
+	z-index: -1;
+}
+.five {
+	top: 6em;
+	right: 18em;
+	z-index: -1;
+}
+.six {
+	top: 23em;
+	right: 30em;
+	z-index: -2;
+}
+
+/* mobile queries */
+@media (min-width: 200px) and (max-width: 480px) {
+	body {
+		margin: 1em;
+	}
+
+	h1 {
+		margin-top: 1em;
+		font-size: 3em;
+	}
+	p {
+		margin-right: 10%;
+		font-size: 1.5em;
+	}
+	.five,
+	.one,
+	.four {
+		display: none;
+	}
+
+	.two {
+		top: 8em;
+		right: 1em;
+		z-index: -1;
+	}
+	.three {
+		z-index: -1;
+		top: 4em;
+		left: 2em;
+		position: relative;
+		width: 30%;
+	}
+
+	.six {
+		top: 35em;
+		right: 1em;
+		z-index: -2;
+		width: 50%;
+	}
+	.social {
+		margin-top: 8em;
+	}
+}
+/* tablem queries */
+@media (min-width: 481px) and (max-width: 799px) {
+	body {
+		margin: 3em;
+	}
+	p {
+		margin-right: 20%;
+	}
+	h1 {
+		margin-top: 2em;
+		font-size: 6em;
+	}
+	.social {
+		margin-top: 8em;
+	}
+	.one {
+		top: 18em;
+		right: 1em;
+	}
+	.four {
+		right: 4em;
+	}
+	.five {
+		top: 14em;
+		right: 10em;
+		z-index: -1;
+	}
+	.six {
+		top: 29em;
+		right: 6em;
+	}
+}
